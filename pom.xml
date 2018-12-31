@@ -12,6 +12,7 @@
         <module>calcite-csv</module>
         <module>calcite-memory</module>
         <module>calcite-file</module>
+        <module>calcite-list</module>
     </modules>
 
     <dependencyManagement>
