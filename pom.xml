@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fys</groupId>
+    <artifactId>calcite-examples</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>calcite-csv</module>
+        <module>calcite-memory</module>
+        <module>calcite-file</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.calcite</groupId>
+                <artifactId>calcite-core</artifactId>
+                <version>1.17.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.calcite</groupId>
+                <artifactId>calcite-linq4j</artifactId>
+                <version>1.17.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.calcite</groupId>
+                <artifactId>calcite-avatica</artifactId>
+                <version>1.12.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.calcite.avatica</groupId>
+                <artifactId>avatica-core</artifactId>
+                <version>1.12.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.calcite</groupId>
+                <artifactId>calcite-example-csv</artifactId>
+                <version>1.17.0</version>
+            </dependency>
+            <dependency>
+                <groupId>sqlline</groupId>
+                <artifactId>sqlline</artifactId>
+                <scope>test</scope>
+                <version>1.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.9</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
